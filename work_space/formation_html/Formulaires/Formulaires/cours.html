@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Formulaire</title>
+    <meta charset="UTF-8">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+    <!--Dans le type de l'input "text" on peut mettre des chiffres ou des lettres -->
+    <form action="" name="Etat civil">
+        Nom : <input type="Nom" size="30" maxlength="30" value="Votre nom de famille"
+            placeholder="Votre nom de famille">
+        <p>Prénom : <input type="Prénom" value="Votre Prénom"></p>
+        <p>Adresse : <input type="Adresse" placeholder="Votre adresse" autofocus> </p>
+        <p> Code postal : <input type="text" pattern="[0-9]{5}"><br>
+            <input type="submit"></p>
+        <p>Donnez votre avis : </p><textarea rows="5" cols="35" wrap="soft"
+            placeholder="Veuillez saisir un commentaire"></textarea>
+        <p> votre navigateur préféré :<select>
+                <option value="1">Edge</option>
+                <option value="2">Firefox</option>
+                <option value="3">Safari</option>
+                <option value="4">Opera</option>
+                <option value="5">Google Chrome</option>
+            </select></p>
+
+        <select size="8">
+            <option>Moins de 20 ans</option>
+            <option>De 20 à 40 ans</option>
+            <option>De 40 à 60 ans</option>
+            <option>Plus de 60 ans</option>
+        </select>
+
+        <p>Votre navigateur préféré :<select>
+                <option value="ME">Edge</option>
+                <option value="FF">Firefox</option>
+                <option value="S" selected>Safari</option>
+                <option value="O">Opera</option>
+                <option value="GC">Google Chrome</option>
+            </select></p>
+        <b>Sexe</b> :<br><input type="radio" name="sexe">Masculin<input type="radio" name="sexe" checked>Féminin
+        <form action="">Login :<input type="password"></form>
+    </form>
+    <p>
+        <form action="">Votre pizza avec :<br>
+            <input type="checkbox" name="n1" valeur> Poulet<br>
+            <input type="checkbox" name="n2"> Mozzarella<br>
+            <input type="checkbox" name="n3"> Végétarienne<br>
+            <input type="checkbox" name="n4"><br>
+            <input type="checkbox" name="n5"><br>
+            <input type="checkbox" name="n6"><br>
+            <input type="checkbox" name="n7"><br>
+        </form>
+    </p>
+    <form action="" method="GET">Votre pizza avec :<br>
+        <input type="checkbox" name="n1" checked value="1"> Mozzarella<br>
+        <input type="checkbox" name="n2"> Jambon<br>
+        <input type="checkbox" name="n3" checked> Sauce tomate<br>
+        <input type="checkbox" name="n4"> Poivrons<br>
+        <input type="checkbox" name="n5"> Champignons<br>
+        <input type="checkbox" name="n6">
+        Olives noires<br>
+        <input type="checkbox" name="n7"> Sauce piquante
+        <input type="submit">
+    </form>
+    <form action="" method="post" enctype="multipart/form-data"><input type="file"></form>
+    <button onclick="alert('Action JavaScript')">Cliquez-ici</button>
+
+
+
+
+</body>
+
+</html>

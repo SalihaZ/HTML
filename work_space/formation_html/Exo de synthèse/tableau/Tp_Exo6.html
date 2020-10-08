@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>exo6</title>
+
+    <style type="text/css">
+        table {
+            border: 2px solid black;
+            height: 100px;
+            width: 40%;
+            border-collapse: collapse;
+
+
+        }
+
+        td {
+            text-align: left;
+            border: 2px solid gray;
+            width: 33;
+
+        }
+
+        th {
+            border: 1px solid gray;
+        }
+
+        tfoot {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption> Calcul de la moyenne</caption>
+        <thead>
+            <tr>
+                <th>Matières</td>
+                <th>Note par matière</td>
+                <th>Coefficient</td>
+                <th>Note*Coefficient</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>Mathematique</td>
+            <td>17</td>
+            <td>4</td>
+            <td>68</td>
+        </tr>
+        <tr>
+            <td>Physique</td>
+            <td>15</td>
+            <td>3</td>
+            <td>45</td>
+            </tr>
+            <tr>
+                <td>Informatique</td>
+                <td>16</td>
+                <td>2</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td colspan="2">Totals</td>
+                <td>9</td>
+                <td>145</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">Moyenne</td>
+                <td>16.12</td>
+            </tr>
+            
+        </tfoot>
+    </table>
+</body>

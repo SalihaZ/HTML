@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>input</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Name (4 to 8 characters):</label>
+
+        <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+        <p>
+            <!--Les éléments <input> dont l'attribut type vaut "email" permettent à un utilisateur de saisir 
+                et d'éditer une adresse mail ou, si l'attribut multiple est indiqué, une liste d'adresses mail. 
+                La valeur saisie est automatiquement validée afin de vérifier que le champ est vide ou que l'adresse 
+                (ou la liste d'adresses) est correcte-->
+            <label for="email">Enter your globex.com email:</label>
+
+            <input type="email" id="email" pattern=".+@globex.com" size="30" required>
+        </p>
+        <p><label for="tentacles">Number of tentacles (10-100):</label>
+
+            <input type="number" id="tentacles" name="tentacles" min="10" max="100"></p>
+    </form>
+</body>

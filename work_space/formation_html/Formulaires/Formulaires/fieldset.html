@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Html</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form>
+        <!--L'élément HTML <fieldset> est utilisé afin de 
+            regrouper plusieurs contrôles interactifs ainsi que 
+            des étiquettes (<label>) dans un formulaire web.
+            Comme on peut le voir dans l'exemple ci-avant, l'élément 
+            <fieldset> permet de regrouper une partie d'un formulaire 
+            HTML et d'associer une légende (<legend>) décrivant ce groupe. 
+            Cet élément utilise quelques attributs et notamment form dont 
+            la valeur correspond à la valeur de l'attribut id d'un élément 
+            <form> de la même page. De cette façon, on peut avoir un élément 
+            <fieldset> qui soit rattaché à un formulaire mais qui ne soit pas 
+            imbriqué dans ce formulaire. L'attribut disabled permet de désactiver
+             l'élément <fieldset> ainsi que l'ensemble de son contenu via une seule valeur. -->
+
+        <fieldset>
+            <legend>Choose your favorite monster</legend>
+
+            <input type="radio" id="kraken" name="monster" desabled>
+            <label for="kraken">Kraken</label><br />
+
+            <input type="radio" id="sasquatch" name="monster">
+            <label for="sasquatch">Sasquatch</label><br />
+
+            <input type="radio" id="mothman" name="monster">
+            <label for="mothman">Mothman</label>
+        </fieldset>
+    </form>
+    <div class="preference">
+        <label for="cheese">Do you like cheese?</label>
+        <input type="checkbox" name="cheese" id="cheese">
+    </div>
+    <!--Pour associer un élément <label> avec un élément <input>, il faut fournir un identifiant à 
+    l'élément <input> sous la forme d'un attribut id. Ensuite, on peut renseigner l'attribut for de
+     l'élément <label> avec la valeur de cet identifiant.
+
+    On peut également créer un lien implicite en imbriquant l'élément <input> directement au sein 
+    d'un élément <label> . Dans ce cas, les attributs for et id ne sont plus nécessaires.-->
+    <div class="preference">
+        <label for="peas">Do you like peas?</label>
+        <input type="checkbox" name="peas" id="peas"><br>
+        <label>Aimez-vous les petits pois ?
+            <input type="checkbox" name="petits_pois">
+        </label>
+    </div>
+
+</body>

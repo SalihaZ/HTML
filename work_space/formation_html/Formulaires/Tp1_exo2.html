@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>exo2</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+
+            width: 500px;
+        }
+        span{
+            width: 50px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend> <i>Client</i> </legend>
+            <b>Nom et prénom : </b><input type="Nom" placeholder="Nom et prénom"><br>
+            <b>Adresse : </b><input type="adresse"><br>
+            <b>Code Postal : </b><input type="code postal" size="5"><br>
+            <b>Pays : </b><input type="pays" value="France">
+
+        </fieldset>
+        <fieldset>
+            <legend> <i>Commande</i></legend>
+            <b>Modèle : </b><input type="modèle" value="Road 66"><br>
+            <b>Taille : </b> <br> <input type="range" max="4" step="0.5"><br>
+            <b> <span>S</span>   <span>M </span>     <span>L </span>   <span>XL</span> </b><br>
+            <p><label for="quantité"> <b>Quantité:</b> </label>
+                <input type="number" id="quantité" name="quantité" min="1" max="15" value="1"><br>
+            </p>
+
+        </fieldset>
+
+        <input type="submit" value="Commander"> <input type="submit" value="Recommencer">
+
+    </form>
+
+</body>

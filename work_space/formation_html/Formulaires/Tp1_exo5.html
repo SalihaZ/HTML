@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>exo5</title>
+    <meta charset="UTF-8">
+    <style>
+        label {
+            display: block;
+            width: 200px;
+            float: left;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .ligne {
+            margin: 10px;
+        }
+
+        .police {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset class="police">
+            <legend>
+                <h3>Formulaire d'inscription</h3>
+            </legend>
+            <div class="ligne">
+                <label for="nom">Nom</label>
+                <input type="text" size="20" id="nom" placeholder="saisir votre Nom"><br>
+            </div>
+
+            <div class="ligne">
+                <label for="prenom">Prénom</label>
+                <input type="text" size="20" id="prenom" placeholder="saisir votre prénom"><br>
+            </div>
+
+            <div class="ligne">
+                <label for="email">Email</label>
+                <input type="text" size="20" placeholder="saisir votre Email"><br>
+            </div>
+            <div class="ligne">
+                <label for="sexe">Sexe</label>
+                <input type="radio" name="sexe"> Masculin
+                <input type="radio" name="sexe"> Féminin <br>
+            </div>
+            <div class="ligne">
+                <label for="photos">Photo</label>
+                <input type="file" id="photo">
+            </div>
+            <div class="ligne">
+                <label for="Les langages préférés">Les langages préférés</label>
+                <input type="text" id="Les langages préférés">
+                <select>
+                    <option value="Java">Java</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="PHP">PHP</option>
+                </select>
+                <input type="text"> (Pour faire plusieurs choix maintenir la touche CTRL enfoncée)
+
+                <div>
+                    <label for=""></label>
+                </div>
+            </div>
+        </fieldset>
+
+    </form>
+</body>

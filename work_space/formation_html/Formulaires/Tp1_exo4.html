@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>exo4</title>
+    <meta charset="UTF-8">
+    <style>
+        input:valid {
+           background:darkseagreen 
+    
+        }
+
+        form:invalid {
+            background: #ffdddd;
+        }
+    </style>
+</head>
+
+<body>
+    <form action=""></form>
+    <fieldset>
+        <legend>
+            <h1>Authentification</h1>
+        </legend>
+        <p>
+            Login :<input type="email" placeholder="saisir votre login" pattern="@needemand.com" required>
+
+            Mot de passe :<input type="password" placeholder="saisir votre mot de passe" minlength="8" pattern= "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+        </p>
+
+        <input type="submit" value="Envoyer">
+        <input type="submit" value="Effacer">
+    </fieldset>
+    </form>
+
+</body>
